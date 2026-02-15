@@ -12,7 +12,7 @@ const port = 5000;
 // 1. Rate Limiting: Prevent a single IP from spamming the heavy route
 const heavyLimiter = rateLimit({
     windowMs: 1 * 60 * 1000, // 1 minute
-    max: 5, // Limit each IP to 5 heavy requests per minute
+    max: 10, // Limit each IP to 5 heavy requests per minute
     message: "Too many heavy requests, please slow down."
 });
 
