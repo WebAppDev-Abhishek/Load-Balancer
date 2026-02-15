@@ -50,5 +50,6 @@ const server = app.listen(port, () => {
     console.log(`Worker ${process.pid} is ready at http://localhost:${port}`);
 });
 
-server.keepAliveTimeout = 70000;
+server.keepAliveTimeout = 50000;
+
 
